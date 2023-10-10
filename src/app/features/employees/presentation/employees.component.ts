@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./employees.component.scss']
 })
 export class EmployeesComponent {
-
+  onChangeName(name: string) {
+    console.log('Твоё имя: ', name)
+  }
 }
