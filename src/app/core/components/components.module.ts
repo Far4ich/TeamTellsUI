@@ -9,6 +9,7 @@ import { ButtonRedComponent } from './button-red/button-red.component';
 import { MenuItemComponent } from './menu/menu-item/menu-item.component';
 import { AppRoutingModule } from 'src/app/app-routing.module';
 import { ButtonBackComponent } from './button-back/button-back.component';
+import { InputFieldComponent } from './input-field/input-field.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { ButtonBackComponent } from './button-back/button-back.component';
     DepartmentComponent,
     ButtonRedComponent,
     MenuItemComponent,
-    ButtonBackComponent
+    ButtonBackComponent,
+    InputFieldComponent,
   ],
   exports: [
     CardComponent,
@@ -28,7 +30,8 @@ import { ButtonBackComponent } from './button-back/button-back.component';
     EmployeeItemComponent,
     DepartmentComponent,
     ButtonRedComponent,
-    ButtonBackComponent
+    ButtonBackComponent,
+    InputFieldComponent,
   ],
   imports: [
     CommonModule,

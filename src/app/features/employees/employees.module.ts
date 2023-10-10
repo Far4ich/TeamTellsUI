@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { EmployeesComponent } from './presentation/employees.component';
+import { ComponentsModule } from 'src/app/core/components/components.module';
 
 
 
@@ -8,8 +9,12 @@ import { EmployeesComponent } from './presentation/employees.component';
   declarations: [
     EmployeesComponent
   ],
+  exports: [
+    EmployeesComponent
+  ],
   imports: [
-    CommonModule
+    CommonModule,
+    ComponentsModule
   ]
 })
 export class EmployeesModule { }
