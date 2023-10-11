@@ -8,6 +8,7 @@ module.exports = {
       colors: {
         "tt-black": "#000",
         "tt-white": "#FFF",
+        "tt-light-light-gray": "#F2F3F7",
         "tt-red": "#E30611",
         "tt-gray": "#88888D",
         "tt-dark-gray": "#5F6367",

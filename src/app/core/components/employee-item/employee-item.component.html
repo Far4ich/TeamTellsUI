@@ -1,12 +1,12 @@
-<div class="flex justify-between px-2 py-1 rounded-2xl hover:bg-[#F2F3F7] ">
+<div class="flex justify-between px-2 py-1 rounded-2xl hover:bg-tt-light-light-gray ">
 
   <div class="flex">
     <img *ngIf='employee.img == ""' class="w-10 h-10 my-auto rounded-full" src="../../../../assets/empty_employee_icon.svg">
     <img *ngIf='employee.img != ""' class="w-10 h-10 my-auto rounded-full" src="{{employee.img}}">
   
     <div class="ml-4 my-auto">
-      <p class="font-medium text-[16px] text-[#5F6367]">{{employee.name}}</p>
-      <p class="font-normal text-[16px] text-[#88888D]">{{employee.mail}}</p>
+      <p class="font-medium text-[16px] text-tt-dark-gray">{{employee.name}}</p>
+      <p class="font-normal text-[16px] text-tt-gray">{{employee.mail}}</p>
     </div>
   </div>
   
