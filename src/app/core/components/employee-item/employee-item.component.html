@@ -1,4 +1,7 @@
-<div class="flex justify-between px-2 py-1 rounded-2xl hover:bg-tt-light-light-gray ">
+<div class="flex justify-between px-2 py-1 rounded-2xl hover:bg-tt-light-light-gray"
+  (mouseover)="onMouseOver()"
+  (mouseout)="onMouseOut()"
+  >
 
   <div class="flex">
     <img *ngIf='employee.img == ""' class="w-10 h-10 my-auto rounded-full" src="../../../../assets/empty_employee_icon.svg">
@@ -10,7 +13,7 @@
     </div>
   </div>
   
-  <button class="w-5 h-5 my-auto">
+  <button class="w-5 h-5 my-auto" *ngIf="showDots">
     <img src="../../../../assets/triple-dot.svg">
   </button>
 
