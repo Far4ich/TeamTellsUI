@@ -1,6 +1,11 @@
-<app-core-card>
-    <app-core-input-field />
-    <app-core-input-field type="text" placeholder="Имя" defaultValue="Мое имя..." [onChange]="onChangeName" class="my-4" />
-    <app-core-input-field type="number" defaultValue="89024334804" />
-    <app-core-input-field type="password" placeholder="Пароль" class="mt-4" />
-</app-core-card>
+<div class="flex ml-[17%] mt-10">
+
+    <employees-menu (navigate)="showContent($event)"/>
+
+    <div class="ml-8">
+        <router-outlet></router-outlet>
+    </div>
+
+</div>
+
+    

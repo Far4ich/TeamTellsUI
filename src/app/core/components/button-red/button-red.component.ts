@@ -9,4 +9,9 @@ export class ButtonRedComponent {
   @Input() public text: string = "Button";
 
   @Output() public buttonClick = new EventEmitter();
+
+  onClick(): void
+  {
+    this.buttonClick.emit();
+  }
 }
