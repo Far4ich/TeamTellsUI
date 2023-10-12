@@ -1,10 +1,10 @@
-import {Component} from '@angular/core';
-import {Store} from "../../../core/mvi/store";
-import {MainState, NavItem} from "./state/main-state";
-import {MainExecutor} from "./state/main-executor";
-import {MainAction, MainActionTypes} from "./state/main-action";
-import {MainResultAction} from "./state/main-result-action";
-import {MainReducer} from "./state/main-reducer";
+import { Component } from '@angular/core';
+import { Store } from "../../../core/mvi/store";
+import { MainState, NavItem } from "./state/main-state";
+import { MainExecutor } from "./state/main-executor";
+import { MainAction, MainActionTypes } from "./state/main-action";
+import { MainResultAction } from "./state/main-result-action";
+import { MainReducer } from "./state/main-reducer";
 
 @Component({
   selector: 'app-presentation',
@@ -24,4 +24,11 @@ export class MainComponent extends Store<MainState, MainExecutor, MainAction, Ma
   protected readonly MainActionTypes = MainActionTypes;
   protected readonly NavItem = NavItem;
 
+  onSubmitSearch = (value: string) => {
+    console.log('submit search ', value);
+  }
+
+  onChangeSearch = (value: string) => {
+    console.log('change search ', value);
+  }
 }

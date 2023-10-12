@@ -1,10 +1,10 @@
 import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-core-input-field',
-  templateUrl: './input-field.component.html'
+  selector: 'app-cores-dropdown-field',
+  templateUrl: './dropdown-field.component.html',
 })
-export class InputFieldComponent {
+export class DropdownFieldComponent {
   @Input() placeholder?: string;
   @Input() class: string[] | string = [];
   @Input() defaultValue: string = '';
